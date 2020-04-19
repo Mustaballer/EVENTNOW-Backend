@@ -4,6 +4,8 @@ import Modal from '../components/Modal/Modal';
 import Backdrop from '../components/Backdrop/Backdrop';
 import './Events.css';
 
+// cool backdrop
+
 class EventsPage extends Component {
     state = {
         creating: false
