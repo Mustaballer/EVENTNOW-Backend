@@ -21,7 +21,7 @@ const events = async eventIds => {
         throw err;
     }
 };
-
+// there seems to be an issue NEED TO FIX BUGS
 const singleEvent = async eventId => {
     try {
         const event = await eventLoader.load(eventId.toString());
