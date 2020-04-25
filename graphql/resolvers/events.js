@@ -16,7 +16,7 @@ module.exports = {
     },
     createEvent: async (args, req) => {
         if (!req.isAuth) {
-            throw new Error('Unauthenthicated.')
+            throw new Error('Unauthenticated.')
         }
         const event = new Event({
             title: args.eventInput.title,
@@ -32,15 +32,15 @@ module.exports = {
             const creator = await User.findById(req.userId)
 
             if (!creator) {
-                throw new Error('User not found');
+                throw new Error('User not found.');
             }
             creator.createdEvents.push(event);
             await creator.save();
 
             return createdEvent;
         } catch(err) {
+            console.log(err);
             throw err;
         }
-        return event;
     }
 };
