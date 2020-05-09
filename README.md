@@ -1,4 +1,4 @@
-# EVENTNOW Backedn
+# EVENTNOW Backend
 
 This is the backend for the EVENTNOW web app that is a clean and highly efficient event booker service created with React and other backend technologies. EVENTNOW is a creative and well optimzed application that is able to create, delete both events and bookers all with user authorization. 
 
